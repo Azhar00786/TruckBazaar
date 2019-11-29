@@ -1,6 +1,6 @@
 # TruckBazaar
 
-    Truck Bazaar is an platform that helps businesses find transport providers 
+Truck Bazaar is an platform that helps businesses find transport providers 
 and get goods delivered on time.This site helps to cut the middle man in logistics 
 sector which will guarantee good money for drivers and good and affordable services 
 for business owners.
