@@ -5,7 +5,7 @@ and get goods delivered on time.This site helps to cut the middle man in logisti
 sector which will guarantee good money for drivers and good and affordable services 
 for business owners.
 
-Languages used PHP, HTML, CSS, SQL
+Languages used PHP, HTML, CSS, SQL.
 Database used:MySQL
 
 Steps to run:-
