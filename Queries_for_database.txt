@@ -1,0 +1,14 @@
+create database truckbazar;
+
+create table customer(c_no int primary key AUTO_INCREMENT,customer_name varchar(20) not null,customer_sex varchar(30) not null,address_1 varchar(30) not null,address_2 varchar(30) not null,emailid varchar(30),username varchar(30) unique,password_field varchar(256),contact_number varchar(12),file_location varchar(100));
+
+create table driver(dr_no int primary key AUTO_INCREMENT,driver_name varchar(20) not null,driver_sex varchar(30) not null,address_1 varchar(30) not null,address_2 varchar(30) not null,emailid varchar(30),username varchar(30) unique,password_field varchar(256),contact_number varchar(12),file_location varchar(100));
+
+create table driver_request(driver_no int primary key references driver(dr_no),driver_pickupcity varchar(80) not null,driver_dropcity varchar(80) not null,driver_startdate varchar(20) not null,driver_enddate varchar(20) not null,driver_trucktype varchar(60) not null);
+
+create table customer_request(customer_no int primary key references customer(c_no),customer_pickupcity varchar(80) not null,customer_dropcity varchar(80) not null,customer_pickup_date varchar(20) not null,customer_trucktype varchar(60) not null);
+
+create table admin(admin_no int primary key not null, admin_name varchar(30) not null,admin_username varchar(30) not null,admin_password varchar(256) not null);
+
+INSERT into admin(admin_no,admin_name,admin_username,admin_password) values(1,'Azhar Shaikh','azhar','azhar');
+INSERT into admin(admin_no,admin_name,admin_username,admin_password) values(2,'Alair Machado','alair','alair');
